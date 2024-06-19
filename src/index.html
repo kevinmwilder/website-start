@@ -31,7 +31,7 @@
     <!-- favors SEO to parent where it belongs in this case -->
 
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="bitcoin.js" defer></script>
+    <script src="url.js" defer></script>
 </head>
 
 <body>
@@ -126,6 +126,13 @@
                 </li>
             </ul>
         </section>
+        <h1>Enter a URL</h1>
+        <form id="urlForm" onsubmit="return false;">
+            <label for="urlInput">URL:</label>
+            <input type="url" id="urlInput" name="urlInput" placeholder="https://example.com" required>
+            <button type="button" onclick="returnUrl()">Submit</button>
+        </form>
+        <div id="output"></div>
     </main>
 
     <script>
